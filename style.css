@@ -319,7 +319,12 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; }
   text-decoration: none;
   border-bottom: 1px solid var(--color-divider);
 }
-.mobile-nav .btn { margin: var(--space-4) var(--space-5) 0; width: calc(100% - var(--space-10)); }
+.mobile-nav .btn {
+  margin: var(--space-4) var(--space-5) 0;
+  width: calc(100% - var(--space-10));
+  justify-content: center;
+  text-align: center;
+}
 
 /* ---------- Hero ---------- */
 
@@ -457,7 +462,12 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; }
 
 .split { display: grid; gap: var(--space-10); align-items: center; }
 @media (min-width: 900px) { .split { grid-template-columns: 1fr 1fr; gap: var(--space-16); align-items: stretch; } }
-.split img { border-radius: var(--radius-lg); object-fit: cover; width: 100%; }
+.split img {
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+  width: 100%;
+  border: 1px solid var(--color-border);
+}
 @media (min-width: 900px) { .split > img { height: 100%; min-height: 420px; } }
 .split--reverse > :first-child { order: 2; }
 @media (max-width: 899px) { .split--reverse > :first-child { order: 0; } }
