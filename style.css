@@ -405,7 +405,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; }
 /* ---------- Trust bar ---------- */
 
 .trustbar { background: var(--color-surface); border-bottom: 1px solid var(--color-divider); }
-.trust-item dt, .contact-item h3, .aside-card h3, .review-group h3, .spec-block h4, .dl-inline dt, .progress-meta, .crumbs, .card-num, .step-index, .footer-col h3 { font-family: var(--font-mono); }
+.trust-item dt, .contact-item h3, .aside-card h3, .review-group h3, .spec-block h3, .dl-inline dt, .progress-meta, .crumbs, .card-num, .step-index, .footer-col h3 { font-family: var(--font-mono); }
 .trustbar-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -566,7 +566,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 600; }
 .service-meta { display: grid; gap: var(--space-5); align-content: start; }
 .spec { display: grid; gap: var(--space-5); }
 .spec-block { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-5) var(--space-6); }
-.spec-block h4 {
+.spec-block h3 {
   font-size: var(--text-xs);
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -880,7 +880,7 @@ fieldset { border: 0; }
 .contact-item h3,
 .aside-card h3,
 .review-group h3,
-.spec-block h4,
+.spec-block h3,
 .dl-inline dt,
 .progress-meta,
 .crumbs,
