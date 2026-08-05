@@ -1,0 +1,28 @@
+[build]
+  publish = "."
+
+# Keep .html URLs so they match the canonical tags and sitemap.
+[build.processing]
+  skip_processing = false
+[build.processing.html]
+  pretty_urls = false
+
+# Send the www version to the bare domain (primary).
+[[redirects]]
+  from = "https://www.acafundinggroup.com/*"
+  to = "https://acafundinggroup.com/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
