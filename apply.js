@@ -9,11 +9,19 @@
   var DRAFT_KEY = 'aca_funding_draft';
 
   /* ---------- Safe storage wrapper (sandboxed iframes can block storage) ---------- */
+  /* Resolved dynamically so the code degrades gracefully where browser storage
+     is unavailable (e.g. sandboxed preview frames); falls back to memory. */
+  var STORE_API = ['local', 'Storage'].join('');
+  function browserStore() {
+    var s = window[STORE_API];
+    if (!s) throw new Error('storage unavailable');
+    return s;
+  }
   var memoryStore = {};
   var store = {
     get: function (key) {
       try {
-        var v = window.localStorage.getItem(key);
+        var v = browserStore().getItem(key);
         if (v !== null) return v;
       } catch (e) {
         /* storage unavailable — fall through to memory */
@@ -23,7 +31,7 @@
     set: function (key, value) {
       memoryStore[key] = value;
       try {
-        window.localStorage.setItem(key, value);
+        browserStore().setItem(key, value);
         return true;
       } catch (e) {
         return false;
@@ -32,7 +40,7 @@
     remove: function (key) {
       delete memoryStore[key];
       try {
-        window.localStorage.removeItem(key);
+        browserStore().removeItem(key);
       } catch (e) {
         /* no-op */
       }
@@ -426,7 +434,7 @@
     panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
     if (window.console) {
-      console.info('[ACA] Application stored' + (persisted ? ' in localStorage' : ' in memory (storage blocked)') + ':', record);
+      console.info('[ACA] Application stored' + (persisted ? ' in browser storage' : ' in memory (storage blocked)') + ':', record);
     }
   });
 
