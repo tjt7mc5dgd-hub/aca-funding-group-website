@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
-  <rect width="32" height="32" rx="4" fill="#0F2440"/>
-  <path d="M16 6 L27 26.5 H5 Z" fill="none" stroke="#F7F5F1" stroke-width="2.4" stroke-linejoin="miter"/>
-  <path d="M10.5 21 H21.5" stroke="#B0813A" stroke-width="2.6"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="ACA Funding Group">
+  <rect width="32" height="32" rx="6" fill="#070C1A"/>
+  <path d="M4.7 12.3 L12.4 21.7 L19.3 11.2 L27.3 20.1" fill="none" stroke="#1050D6" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11.2 10.2 L20.1 21.7" fill="none" stroke="#1B96DA" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

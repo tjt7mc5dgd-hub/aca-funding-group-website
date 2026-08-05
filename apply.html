@@ -9,7 +9,11 @@
 <meta property="og:description" content="A short multi-step application for small business funding. Complete files are typically reviewed within 24 hours." />
 <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
 <link rel="preconnect" href="https://api.fontshare.com" />
-<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet" />
+<link rel="preconnect" href="https://cdn.fontshare.com" crossorigin />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="./base.css" />
 <link rel="stylesheet" href="./style.css" />
 </head>
@@ -18,14 +22,14 @@
 
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="./index.html" aria-label="ACA Funding Group — home">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
-        <path d="M16 4.5 L28 27.5 H4 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="miter" />
-        <path d="M10 21.6 H22" stroke="#B0813A" stroke-width="2.4" />
-      </svg>
+    <a class="brand" href="./index.html" aria-label="ACA Funding Group — Apply, Clear, Advance, Today! — home">
+      <svg class="logo-mark" viewBox="0 0 98 57" width="40" height="23" fill="none" aria-hidden="true" focusable="false">
+          <path d="M6.5 14.5 L35.5 50 L61.5 10.5 L91.5 44" stroke="#1050D6" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M31 6.5 L64.5 50" stroke="#1B96DA" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
       <span class="brand-text">
         <span class="brand-name">ACA Funding Group</span>
-        <span class="brand-sub">Direct Funder &middot; New Jersey</span>
+        <span class="brand-sub">&middot; Apply, Clear, Advance, Today! &middot;</span>
       </span>
     </a>
     <nav class="nav" aria-label="Primary">
@@ -420,10 +424,8 @@
               <button class="btn btn--ghost" type="button" id="startAnother">Submit another application</button>
             </div>
             <p class="xs muted" style="margin-top: var(--space-6)">Questions in the meantime? Call
-              <!-- PLACEHOLDER: replace [Phone] with the company's real phone number -->
-              <span class="placeholder" style="color: var(--color-primary)">[Phone]</span> or email
-              <!-- PLACEHOLDER: replace [Email] with the company's real email address -->
-              <span class="placeholder" style="color: var(--color-primary)">[Email]</span>.</p>
+              <a href="tel:+12128714990">+1 (212) 871-4990</a> or email
+              <a href="mailto:Subs@acafundinggroup.com">Subs@acafundinggroup.com</a>.</p>
           </div>
         </div>
       </div>
@@ -464,17 +466,17 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="./index.html" aria-label="ACA Funding Group — home">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
-            <path d="M16 4.5 L28 27.5 H4 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="miter" />
-            <path d="M10 21.6 H22" stroke="#B0813A" stroke-width="2.4" />
+        <a class="brand" href="./index.html" aria-label="ACA Funding Group — Apply, Clear, Advance, Today! — home">
+          <svg class="logo-mark" viewBox="0 0 98 57" width="40" height="23" fill="none" aria-hidden="true" focusable="false">
+            <path d="M6.5 14.5 L35.5 50 L61.5 10.5 L91.5 44" stroke="#1050D6" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M31 6.5 L64.5 50" stroke="#1B96DA" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
           <span class="brand-text">
             <span class="brand-name">ACA Funding Group</span>
-            <span class="brand-sub">Direct Funder &middot; New Jersey</span>
+            <span class="brand-sub">&middot; Apply, Clear, Advance, Today! &middot;</span>
           </span>
         </a>
-        <p style="margin-top: var(--space-5); max-width: 44ch">A New Jersey based direct funder purchasing future receivables from established small businesses across the United States.</p>
+        <p style="margin-top: var(--space-5); max-width: 44ch">A direct funder purchasing future receivables from established small businesses across the United States.</p>
       </div>
       <div class="footer-col">
         <h3>Site</h3>
@@ -488,14 +490,8 @@
       </div>
       <div class="footer-col">
         <h3>Contact</h3>
-        <!-- PLACEHOLDER: replace [Phone] with the company's real phone number -->
-        <p>Phone: <span class="placeholder">[Phone]</span></p>
-        <!-- PLACEHOLDER: replace [Email] with the company's real email address -->
-        <p style="margin-top: var(--space-2)">Email: <span class="placeholder">[Email]</span></p>
-        <!-- PLACEHOLDER: replace [Address] with the company's real street address, city, NJ, ZIP -->
-        <p style="margin-top: var(--space-2)">Office: <span class="placeholder">[Address]</span></p>
-        <!-- PLACEHOLDER: replace [Business Hours] with real hours of operation -->
-        <p style="margin-top: var(--space-2)">Hours: <span class="placeholder">[Business Hours]</span></p>
+        <p>Phone: <a href="tel:+12128714990">+1 (212) 871-4990</a></p>
+        <p style="margin-top: var(--space-2)">Email: <a href="mailto:Subs@acafundinggroup.com">Subs@acafundinggroup.com</a></p>
       </div>
     </div>
     <p class="footer-disclosure">
