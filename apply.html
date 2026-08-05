@@ -1,0 +1,515 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Apply for Funding — ACA Funding Group LLC</title>
+<meta name="description" content="Apply for a purchase of future receivables from ACA Funding Group LLC. Five short steps, no cost to be reviewed. Last 3-4 months of business bank statements required." />
+<meta property="og:title" content="Apply for Funding — ACA Funding Group LLC" />
+<meta property="og:description" content="A short multi-step application for small business funding. Complete files are typically reviewed within 24 hours." />
+<link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://api.fontshare.com" />
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="./base.css" />
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./index.html" aria-label="ACA Funding Group — home">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+        <path d="M16 4.5 L28 27.5 H4 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="miter" />
+        <path d="M10 21.6 H22" stroke="#B0813A" stroke-width="2.4" />
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">ACA Funding Group</span>
+        <span class="brand-sub">Direct Funder &middot; New Jersey</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="./index.html">Home</a>
+      <a href="./services.html">Funding Solutions</a>
+      <a href="./about.html">About &amp; Contact</a>
+    </nav>
+    <div class="header-cta"><a class="btn btn--primary" href="./apply.html" aria-current="page">Apply for Funding</a></div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu" data-nav-toggle>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./services.html">Funding Solutions</a></li>
+      <li><a href="./about.html">About &amp; Contact</a></li>
+    </ul>
+    <a class="btn btn--primary" href="./apply.html">Apply for Funding</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <p class="crumbs"><a href="./index.html">Home</a> &nbsp;/&nbsp; Apply</p>
+      <h1 class="h-page">Apply for a purchase of future receivables</h1>
+      <p class="lede">Five short steps. There is no cost to be reviewed and no obligation to accept a term sheet. Complete files are typically reviewed within 24 hours.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap apply-layout">
+
+      <div>
+        <!-- FORM -->
+        <div id="formShell">
+          <div class="progress" aria-hidden="false">
+            <div class="progress-meta">
+              <span id="progressLabel">Step 1 of 5 &middot; Business</span>
+              <span id="progressPct">20%</span>
+            </div>
+            <div class="progress-track">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+
+          <form class="form-card" id="applyForm" novalidate>
+
+            <!-- STEP 1 -->
+            <fieldset class="step-panel is-active" data-step="1">
+              <div class="fs-head">
+                <h2 class="h-sub">Business information</h2>
+                <p>Enter the details as they appear on the entity's formation documents and bank statements.</p>
+              </div>
+              <div class="field-grid field-grid--2">
+                <div class="field field--full">
+                  <label for="legalName">Business legal name <span class="req">*</span></label>
+                  <input id="legalName" name="legalName" type="text" autocomplete="organization" required />
+                  <p class="error-msg">Enter the full legal name of the entity.</p>
+                </div>
+                <div class="field">
+                  <label for="dba">DBA / trade name</label>
+                  <input id="dba" name="dba" type="text" />
+                  <p class="hint">Leave blank if the business operates under its legal name.</p>
+                </div>
+                <div class="field">
+                  <label for="entityType">Entity type <span class="req">*</span></label>
+                  <select id="entityType" name="entityType" required>
+                    <option value="">Select entity type</option>
+                    <option>Sole proprietorship</option>
+                    <option>General partnership</option>
+                    <option>Limited partnership</option>
+                    <option>LLC</option>
+                    <option>S corporation</option>
+                    <option>C corporation</option>
+                    <option>Nonprofit</option>
+                    <option>Other</option>
+                  </select>
+                  <p class="error-msg">Select an entity type.</p>
+                </div>
+                <div class="field field--full">
+                  <label for="street">Business street address <span class="req">*</span></label>
+                  <input id="street" name="street" type="text" autocomplete="street-address" required />
+                  <p class="error-msg">Enter the business street address.</p>
+                </div>
+                <div class="field">
+                  <label for="city">City <span class="req">*</span></label>
+                  <input id="city" name="city" type="text" autocomplete="address-level2" required />
+                  <p class="error-msg">Enter the city.</p>
+                </div>
+                <div class="field">
+                  <label for="zip">ZIP code <span class="req">*</span></label>
+                  <input id="zip" name="zip" type="text" inputmode="numeric" autocomplete="postal-code" pattern="\d{5}(-\d{4})?" required />
+                  <p class="error-msg">Enter a valid 5-digit ZIP code.</p>
+                </div>
+                <div class="field">
+                  <label for="state">Business state <span class="req">*</span></label>
+                  <select id="state" name="state" data-states required>
+                    <option value="">Select state</option>
+                  </select>
+                  <p class="error-msg">Select the state where the business operates.</p>
+                </div>
+                <div class="field">
+                  <label for="incState">State of incorporation / formation <span class="req">*</span></label>
+                  <select id="incState" name="incState" data-states required>
+                    <option value="">Select state</option>
+                  </select>
+                  <p class="error-msg">Select the state of formation.</p>
+                </div>
+                <div class="field">
+                  <label for="industry">Industry <span class="req">*</span></label>
+                  <select id="industry" name="industry" required>
+                    <option value="">Select industry</option>
+                    <option>Retail</option>
+                    <option>Restaurant / food service</option>
+                    <option>Trucking / logistics</option>
+                    <option>Construction / trades</option>
+                    <option>Automotive / repair</option>
+                    <option>Healthcare / medical practice</option>
+                    <option>Professional services</option>
+                    <option>E-commerce</option>
+                    <option>Salon / spa / wellness</option>
+                    <option>Wholesale / distribution</option>
+                    <option>Manufacturing</option>
+                    <option>Landscaping / seasonal services</option>
+                    <option>Entertainment / events</option>
+                    <option>Other</option>
+                  </select>
+                  <p class="error-msg">Select an industry.</p>
+                </div>
+                <div class="field">
+                  <label for="timeInBusiness">Time in business <span class="req">*</span></label>
+                  <select id="timeInBusiness" name="timeInBusiness" required>
+                    <option value="">Select time in business</option>
+                    <option>Less than 6 months</option>
+                    <option>6&ndash;11 months</option>
+                    <option>1&ndash;2 years</option>
+                    <option>2&ndash;5 years</option>
+                    <option>5&ndash;10 years</option>
+                    <option>More than 10 years</option>
+                  </select>
+                  <p class="error-msg">Select how long the business has been operating.</p>
+                </div>
+              </div>
+              <div class="form-nav">
+                <span></span>
+                <button class="btn btn--solid" type="button" data-next>Continue to financials</button>
+              </div>
+            </fieldset>
+
+            <!-- STEP 2 -->
+            <fieldset class="step-panel" data-step="2">
+              <div class="fs-head">
+                <h2 class="h-sub">Revenue &amp; banking</h2>
+                <p>Approximate figures are fine at this stage. Underwriting verifies everything against the business bank statements.</p>
+              </div>
+              <div class="field-grid field-grid--2">
+                <div class="field">
+                  <label for="annualRevenue">Annual gross revenue (USD) <span class="req">*</span></label>
+                  <input id="annualRevenue" name="annualRevenue" type="text" inputmode="numeric" placeholder="e.g. 850,000" required data-money />
+                  <p class="error-msg">Enter an annual gross revenue amount.</p>
+                </div>
+                <div class="field">
+                  <label for="monthlyRevenue">Average monthly gross revenue (USD) <span class="req">*</span></label>
+                  <input id="monthlyRevenue" name="monthlyRevenue" type="text" inputmode="numeric" placeholder="e.g. 70,000" required data-money />
+                  <p class="error-msg">Enter an average monthly gross revenue amount.</p>
+                </div>
+                <div class="field">
+                  <label for="avgBalance">Average bank balance (USD) <span class="req">*</span></label>
+                  <input id="avgBalance" name="avgBalance" type="text" inputmode="numeric" placeholder="e.g. 12,000" required data-money />
+                  <p class="hint">Average daily balance in the operating account.</p>
+                  <p class="error-msg">Enter an average bank balance.</p>
+                </div>
+                <div class="field">
+                  <label for="depositsPerMonth">Monthly deposit count</label>
+                  <select id="depositsPerMonth" name="depositsPerMonth">
+                    <option value="">Select (optional)</option>
+                    <option>Fewer than 5</option>
+                    <option>5&ndash;9</option>
+                    <option>10&ndash;19</option>
+                    <option>20 or more</option>
+                  </select>
+                  <p class="hint">Helps us gauge deposit consistency.</p>
+                </div>
+                <div class="field field--full">
+                  <label for="cardVolume">Share of revenue collected by card</label>
+                  <select id="cardVolume" name="cardVolume">
+                    <option value="">Select (optional)</option>
+                    <option>None &mdash; invoiced or cash only</option>
+                    <option>Under 25%</option>
+                    <option>25&ndash;50%</option>
+                    <option>50&ndash;75%</option>
+                    <option>Over 75%</option>
+                  </select>
+                  <p class="hint">If card volume is material, have your merchant processing statements available.</p>
+                </div>
+              </div>
+              <div class="form-nav">
+                <button class="btn btn--ghost" type="button" data-prev>Back</button>
+                <button class="btn btn--solid" type="button" data-next>Continue to funding request</button>
+              </div>
+            </fieldset>
+
+            <!-- STEP 3 -->
+            <fieldset class="step-panel" data-step="3">
+              <div class="fs-head">
+                <h2 class="h-sub">Funding request &amp; existing positions</h2>
+                <p>Disclosing open positions up front avoids a second review cycle &mdash; they appear in the bank statements regardless.</p>
+              </div>
+              <div class="field-grid field-grid--2">
+                <div class="field">
+                  <label for="requestedAmount">Requested amount (USD) <span class="req">*</span></label>
+                  <input id="requestedAmount" name="requestedAmount" type="text" inputmode="numeric" placeholder="e.g. 75,000" required data-money />
+                  <p class="hint">Advances typically range from $10,000 to $500,000. Your amount is set in underwriting.</p>
+                  <p class="error-msg">Enter the amount you are requesting.</p>
+                </div>
+                <div class="field">
+                  <label for="remittancePref">Preferred remittance frequency</label>
+                  <select id="remittancePref" name="remittancePref">
+                    <option value="">No preference</option>
+                    <option>Daily (business days)</option>
+                    <option>Weekly</option>
+                  </select>
+                  <p class="hint">Subject to underwriting and the receivables purchase agreement.</p>
+                </div>
+                <div class="field field--full">
+                  <label for="useOfFunds">Use of funds <span class="req">*</span></label>
+                  <textarea id="useOfFunds" name="useOfFunds" rows="4" placeholder="For example: purchase inventory ahead of the fall season and cover payroll during a 45-day receivable cycle."></textarea>
+                  <p class="error-msg">Tell us briefly how the funds would be used.</p>
+                </div>
+                <div class="field field--full">
+                  <span id="hasAdvancesLabel" class="field-legend" style="font-size: var(--text-sm); font-weight: 700">Does the business have any existing advances or funding positions? <span class="req">*</span></span>
+                  <div class="radio-row" role="radiogroup" aria-labelledby="hasAdvancesLabel">
+                    <label class="radio-chip"><input type="radio" name="hasAdvances" value="No" /><span>No</span></label>
+                    <label class="radio-chip"><input type="radio" name="hasAdvances" value="Yes" /><span>Yes</span></label>
+                  </div>
+                  <p class="error-msg">Select yes or no.</p>
+                </div>
+              </div>
+              <div class="field-grid field-grid--2" id="advanceDetails" hidden style="margin-top: var(--space-5)">
+                <div class="field">
+                  <label for="advanceCount">How many open positions? <span class="req">*</span></label>
+                  <select id="advanceCount" name="advanceCount">
+                    <option value="">Select</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 or more</option>
+                  </select>
+                  <p class="error-msg">Select the number of open positions.</p>
+                </div>
+                <div class="field">
+                  <label for="advanceBalance">Total outstanding balance (USD) <span class="req">*</span></label>
+                  <input id="advanceBalance" name="advanceBalance" type="text" inputmode="numeric" placeholder="e.g. 40,000" data-money />
+                  <p class="error-msg">Enter the combined outstanding balance.</p>
+                </div>
+                <div class="field field--full">
+                  <div class="check-line">
+                    <input id="wantsConsolidation" name="wantsConsolidation" type="checkbox" value="Yes" />
+                    <label for="wantsConsolidation">I would like to be considered for a consolidation of these positions.</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-nav">
+                <button class="btn btn--ghost" type="button" data-prev>Back</button>
+                <button class="btn btn--solid" type="button" data-next>Continue to ownership</button>
+              </div>
+            </fieldset>
+
+            <!-- STEP 4 -->
+            <fieldset class="step-panel" data-step="4">
+              <div class="fs-head">
+                <h2 class="h-sub">Ownership &amp; contact</h2>
+                <p>The signing owner must have authority to enter a receivables purchase agreement on behalf of the entity.</p>
+              </div>
+              <div class="field-grid field-grid--2">
+                <div class="field">
+                  <label for="ownerName">Owner full name <span class="req">*</span></label>
+                  <input id="ownerName" name="ownerName" type="text" autocomplete="name" required />
+                  <p class="error-msg">Enter the owner's full name.</p>
+                </div>
+                <div class="field">
+                  <label for="ownershipPct">Ownership percentage <span class="req">*</span></label>
+                  <input id="ownershipPct" name="ownershipPct" type="number" min="1" max="100" step="1" placeholder="e.g. 100" required />
+                  <p class="error-msg">Enter a percentage between 1 and 100.</p>
+                </div>
+                <div class="field">
+                  <label for="ownerPhone">Owner phone <span class="req">*</span></label>
+                  <input id="ownerPhone" name="ownerPhone" type="tel" autocomplete="tel" placeholder="(201) 555-0123" required />
+                  <p class="error-msg">Enter a phone number with at least 10 digits.</p>
+                </div>
+                <div class="field">
+                  <label for="ownerEmail">Owner email <span class="req">*</span></label>
+                  <input id="ownerEmail" name="ownerEmail" type="email" autocomplete="email" placeholder="name@business.com" required />
+                  <p class="error-msg">Enter a valid email address.</p>
+                </div>
+                <div class="field">
+                  <label for="creditBracket">Estimated credit score bracket <span class="req">*</span></label>
+                  <select id="creditBracket" name="creditBracket" required>
+                    <option value="">Select bracket</option>
+                    <option>Below 550</option>
+                    <option>550&ndash;599</option>
+                    <option>600&ndash;649</option>
+                    <option>650&ndash;699</option>
+                    <option>700&ndash;749</option>
+                    <option>750 or above</option>
+                    <option>Not sure</option>
+                  </select>
+                  <p class="hint">Credit is one input among several. It is not the deciding factor.</p>
+                  <p class="error-msg">Select a bracket, or choose "Not sure".</p>
+                </div>
+                <div class="field">
+                  <label for="referral">How did you hear about ACA Funding Group?</label>
+                  <select id="referral" name="referral">
+                    <option value="">Select (optional)</option>
+                    <option>Search</option>
+                    <option>Referral from another business</option>
+                    <option>ISO or broker</option>
+                    <option>Existing ACA merchant</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-nav">
+                <button class="btn btn--ghost" type="button" data-prev>Back</button>
+                <button class="btn btn--solid" type="button" data-next>Review application</button>
+              </div>
+            </fieldset>
+
+            <!-- STEP 5 -->
+            <fieldset class="step-panel" data-step="5">
+              <div class="fs-head">
+                <h2 class="h-sub">Review &amp; submit</h2>
+                <p>Check the details below, then submit. You can go back to any step to make changes.</p>
+              </div>
+
+              <div class="review-list" id="reviewOutput"></div>
+
+              <div class="callout" style="margin-top: var(--space-8)">
+                <p><strong>Bank statements are required.</strong> To complete underwriting we need the last 3&ndash;4 months of complete business bank statements &mdash; all pages, as downloaded from your bank. Send them to the email address listed on our
+                  <a class="textlink" href="./about.html#contact">contact page</a> after submitting, or reply to the confirmation our team sends you. Seasonal reviews may request up to 12 months.</p>
+              </div>
+
+              <div style="margin-top: var(--space-6); display: grid; gap: var(--space-4)">
+                <div class="check-line">
+                  <input id="consentAccuracy" name="consentAccuracy" type="checkbox" required />
+                  <label for="consentAccuracy">I confirm the information provided is accurate to the best of my knowledge and that I am authorized to submit it on behalf of the business. <span class="req">*</span></label>
+                </div>
+                <div class="check-line">
+                  <input id="consentReview" name="consentReview" type="checkbox" required />
+                  <label for="consentReview">I understand this is an application to be reviewed for a purchase of future receivables &mdash; not a loan application &mdash; that submitting it creates no obligation on either side, and that any offer is subject to underwriting and a signed receivables purchase agreement. <span class="req">*</span></label>
+                </div>
+                <p class="error-msg" id="consentError" style="display:none">Both confirmations are required before submitting.</p>
+              </div>
+
+              <div class="form-nav">
+                <button class="btn btn--ghost" type="button" data-prev>Back</button>
+                <button class="btn btn--primary" type="submit" id="submitBtn">Submit application</button>
+              </div>
+            </fieldset>
+
+          </form>
+          <p class="xs muted" style="margin-top: var(--space-5); max-width: 70ch">Do not send account numbers, Social Security numbers, or other sensitive identifiers through this form. Your entries are held in this browser only until an ACA Funding Group representative collects the file directly.</p>
+        </div>
+
+        <!-- SUCCESS -->
+        <div class="success" id="successPanel" role="status" aria-live="polite">
+          <div class="success-card">
+            <div class="success-mark" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <h2 class="h-page">Application received</h2>
+            <p class="lede" style="margin-top: var(--space-4)">Thank you, <span id="successName">applicant</span>. Your application for <strong id="successBusiness">your business</strong> has been recorded in this browser and is ready for an ACA Funding Group underwriter.</p>
+
+            <ol class="next-steps" role="list">
+              <li><span><strong>Underwriting review &mdash; within 24 hours</strong>An underwriter reviews the application and your bank statements. Send the last 3&ndash;4 months of complete business bank statements if you have not already.</span></li>
+              <li><span><strong>Term sheet</strong>If the file supports a purchase, you receive a written term sheet: purchase price, specified amount of receivables purchased, specified percentage, and remittance frequency. No interest rate, because this is not a loan.</span></li>
+              <li><span><strong>Signing &amp; verification</strong>Sign the receivables purchase agreement and complete bank verification.</span></li>
+              <li><span><strong>Funding &mdash; same or next business day</strong>Funds are sent by ACH or wire to your operating account, typically the same or next business day after signing.</span></li>
+            </ol>
+
+            <div class="ref-line">
+              Reference: <strong id="successRef">&mdash;</strong> &middot; Submitted <span id="successTime">&mdash;</span>
+              <!-- PLACEHOLDER: this reference number is generated client-side for the applicant's convenience. Replace with your real CRM/submission ID if you connect a backend. -->
+            </div>
+
+            <div class="btn-row" style="margin-top: var(--space-8)">
+              <a class="btn btn--solid" href="./index.html">Back to home</a>
+              <button class="btn btn--ghost" type="button" id="startAnother">Submit another application</button>
+            </div>
+            <p class="xs muted" style="margin-top: var(--space-6)">Questions in the meantime? Call
+              <!-- PLACEHOLDER: replace [Phone] with the company's real phone number -->
+              <span class="placeholder" style="color: var(--color-primary)">[Phone]</span> or email
+              <!-- PLACEHOLDER: replace [Email] with the company's real email address -->
+              <span class="placeholder" style="color: var(--color-primary)">[Email]</span>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ASIDE -->
+      <aside class="apply-aside" aria-label="What to expect">
+        <div class="aside-card">
+          <h3>What you'll need</h3>
+          <ul>
+            <li>Last 3&ndash;4 months of complete business bank statements</li>
+            <li>Government-issued photo ID for the signing owner</li>
+            <li>Voided business check for the operating account</li>
+            <li>Merchant processing statements, if card volume is material</li>
+            <li>Payoff letters, if consolidating existing positions</li>
+          </ul>
+        </div>
+        <div class="aside-card">
+          <h3>What happens next</h3>
+          <ul>
+            <li>Underwriting review, typically within 24 hours</li>
+            <li>Written term sheet if the file supports a purchase</li>
+            <li>Signature and bank verification</li>
+            <li>Funding the same or next business day</li>
+          </ul>
+        </div>
+        <div class="aside-card">
+          <h3>Remember</h3>
+          <p>This is an application to sell a specified amount of future receivables &mdash; not a loan application. No interest rate or APR applies, and no offer exists until a receivables purchase agreement is executed.</p>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="./index.html" aria-label="ACA Funding Group — home">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true" focusable="false">
+            <path d="M16 4.5 L28 27.5 H4 Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="miter" />
+            <path d="M10 21.6 H22" stroke="#B0813A" stroke-width="2.4" />
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">ACA Funding Group</span>
+            <span class="brand-sub">Direct Funder &middot; New Jersey</span>
+          </span>
+        </a>
+        <p style="margin-top: var(--space-5); max-width: 44ch">A New Jersey based direct funder purchasing future receivables from established small businesses across the United States.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Site</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./services.html">Funding Solutions</a></li>
+          <li><a href="./apply.html">Apply for Funding</a></li>
+          <li><a href="./about.html">About &amp; Contact</a></li>
+          <li><a href="./index.html#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contact</h3>
+        <!-- PLACEHOLDER: replace [Phone] with the company's real phone number -->
+        <p>Phone: <span class="placeholder">[Phone]</span></p>
+        <!-- PLACEHOLDER: replace [Email] with the company's real email address -->
+        <p style="margin-top: var(--space-2)">Email: <span class="placeholder">[Email]</span></p>
+        <!-- PLACEHOLDER: replace [Address] with the company's real street address, city, NJ, ZIP -->
+        <p style="margin-top: var(--space-2)">Office: <span class="placeholder">[Address]</span></p>
+        <!-- PLACEHOLDER: replace [Business Hours] with real hours of operation -->
+        <p style="margin-top: var(--space-2)">Hours: <span class="placeholder">[Business Hours]</span></p>
+      </div>
+    </div>
+    <p class="footer-disclosure">
+      ACA Funding Group LLC provides purchases of future receivables, not loans. Products offered are not loans, lines of credit, or extensions of credit, and no interest rate or annual percentage rate applies. All submissions are subject to underwriting review and approval; approval, purchase price, specified amount, and remittance terms are determined by underwriting and are not guaranteed. Funding is not available in all states and is not available for all industries or entity types. Any timeframes described on this site are typical estimates, not commitments. Nothing on this site is an offer, and no offer exists until a fully executed receivables purchase agreement is in place. This site does not provide legal, tax, or accounting advice.
+    </p>
+    <div class="footer-bottom">
+      <span>&copy; <span data-year>2026</span> ACA Funding Group LLC. All rights reserved.</span>
+      <!-- PLACEHOLDER: registration / licensing / DBA details if applicable -->
+      <span><span class="placeholder">[Legal / Registration Details]</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="./app.js" defer></script>
+<script src="./apply.js" defer></script>
+</body>
+</html>
