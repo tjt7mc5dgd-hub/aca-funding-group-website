@@ -197,7 +197,8 @@ document.querySelectorAll(".btn").forEach(function (b) {
     setTimeout(function () { b.textContent = t; b.classList.remove("done"); }, 2600);
   });
 });
-render("house");
+var q=(location.search.match(/style=(\w+)/)||[])[1];
+render(builders[q] ? q : "house");
 </script>
 </body>
 </html>
